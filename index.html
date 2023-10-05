@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <h1>Lists</h1>
+            <div class="addCategory hide" id="inputcat">
+                <input type="text" id="inputtextcategory" placeholder="Enter Category">
+                <button id="addcatbtn" class="button">Add</button>
+                <button id="done" class="button">Done</button>
+            </div>
+            <ul id="Category">
+            </ul>
+
+            
+
+            <button class="plusicon" id="catadd"><i class='bx bx-plus'></i>Add Category</button>
+        </div>
+
+        <div class="container2">
+            <h1 id="headertext">Projects <i class='bx bxs-edit icon' id="editicon"></i></h1>
+            <div class="content">
+                    <div class="addtask hide" id="inputtask">
+                        <input type="text" id="inputtext" placeholder="Enter Task">
+                        <button id="addbtn" class="button">Add</button>
+                        <button id="done2" class="button">Done</button>
+                    </div>
+                    <ul id="list">
+                    </ul>
+            </div>    
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+li {
+    list-style: none;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 80%;
+    height: 600px;
+    display: flex;
+}
+
+input {
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 0;
+    outline: 0;
+    padding: 5px;
+    font-size: 15px;
+    background-color: gainsboro;
+    width: 100%;
+}
+
+button {
+    height: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.addtask , .addCategory {
+    display: flex;
+}
+
+
+.button {
+    border: 0;
+    border-radius: 8px;
+    width: 3rem;
+    position: relative;
+    left: -7px;
+}
+
+#addcatbtn, #addbtn {
+    width: 100px;
+} 
+
+.container1 {
+    background-color: aqua;
+    width: 40%;
+    position: relative;
+    padding: 5px;
+}
+
+.container2 {
+    width: 100%;
+    padding: 2rem;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 95%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.content ul li {
+    position: relative;
+    left: 25px;
+}
+
+ul li:hover {
+    cursor: pointer;
+}
+
+.content ul li::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -25px;
+    top: -3px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+ul li span {
+    position: absolute;
+    right: 60px;
+    font-size: 22px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+} 
+
+ul li span:hover {
+    background-color: #555;
+    border-radius: 50%;
+    color: white;
+}
+
+.plusicon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 3px;
+}
+button i {
+    font-size: 20px;
+}
+
+/* add category ko wala */
+
+.container1 ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container1 ul li {
+    width: 80%;
+    height: 40px;
+    font: 20px;
+    background-color: lightyellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#headertext {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    right: 0;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+#done {
+    background-color: #555;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+
