@@ -17,6 +17,7 @@ li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .container {
@@ -27,8 +28,7 @@ li {
 
 input {
     height: 30px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-radius: 8px;
     border: 0;
     outline: 0;
     padding: 5px;
@@ -55,25 +55,23 @@ button:hover {
     border-radius: 8px;
     width: 3rem;
     position: relative;
-    left: -7px;
+    /* left: -7px; */
 }
 
-#addcatbtn, #addbtn {
-    width: 100px;
-} 
 
 .container1 {
     background-color: aqua;
-    width: 40%;
+    width: 30%;
     position: relative;
-    padding: 5px;
+    padding: 2rem;
+    border-radius: 10px 0 0 10px;
 }
 
 .container2 {
-    width: 100%;
+    width: 70%;
     padding: 2rem;
     background-color: lightgreen;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
 }
 
 .content {
@@ -114,14 +112,18 @@ ul li.checked::before {
     background-image: url(checked.png);
 }
 
-ul li span {
+li span {
     position: absolute;
-    right: 60px;
+    right: 2px;
     font-size: 22px;
     width: 25px;
     height: 25px;
     text-align: center;
 } 
+
+#list li span {
+    margin-right: 15px
+}
 
 ul li span:hover {
     background-color: #555;
@@ -150,6 +152,7 @@ button i {
 }
 
 .container1 ul li {
+    position: relative;
     width: 80%;
     height: 40px;
     font: 20px;
@@ -182,5 +185,58 @@ button i {
 
 .editIcon {
     font-size: 20px;
+}
+
+/* responsive tasks */
+
+@media  screen and (max-width: 1200px){
+
+    body{
+        padding: 2rem;
+    }
+    .container {
+        width: 100%;
+    }
+
+    /* .plusicon {
+        height: 50px;
+        margin-left: 5px;
+    } */
+
+    .container ul li {
+        width: 100%
+    }
+
+    h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width : 580px) {
+    .container {
+        flex-direction: column;
+    }
+
+    div.container1 {
+        width: 100%;
+        min-height: 500px;
+        border-radius: 10px;
+    }
+
+    div.container2 {
+        width: 100%;
+        min-height: 500px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .addCategory {
+        flex-direction: column;
+    }
+    .addCategory button {
+
+        width: 100%;
+    }
 }
 

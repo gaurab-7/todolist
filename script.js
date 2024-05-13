@@ -155,4 +155,3 @@ showcat();
 //   tasks.append(task);
 //   localStorage.listitem("store", JSON.stringify(tasks));
 // }
-
